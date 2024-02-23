@@ -1,0 +1,44 @@
+@media (max-width: 65em) {
+  .footer-container {
+    grid-template-columns: 1.5fr repeat(3, 1fr);
+    row-gap: 2rem;
+    column-gap: 2.4rem;
+  }
+  .address-col {
+    grid-row: 2;
+  }
+  .cta-form {
+    max-width: 60rem;
+  }
+}
+
+@media (max-width: 52em) {
+  .footer-container {
+    grid-template-columns: 1.5fr 1fr 1fr;
+    row-gap: 1rem;
+  }
+  html {
+    font-size: 56.25%;
+  }
+}
+@media (max-width: 49em) {
+  .step {
+    grid-template-columns: 1fr;
+  }
+  .img-box {
+    height: 25rem;
+  }
+  .img-box.club-sample {
+    grid-row: 1;
+  }
+
+  .features .card-container {
+    flex-direction: column;
+  }
+  .footer-container {
+    grid-template-columns: 1.5fr 1fr;
+  }
+  .company-col {
+    grid-column: 2;
+  }
+}

@@ -1,0 +1,101 @@
+/* 
+--- 01 Typography:
+-FONT SIZE SYSTEM (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+-Font Weights: 
+Default: 400
+Medium: 500
+Semi-Bold: 600
+Bold: 700
+
+-Line heights:
+Default: 1
+Paragraph: 1.6
+Small: 1.05
+
+-Letter Spacing:
+
+
+--- 02 Colors:
+
+-Primary: #be4bdb
+
+-Tints: 
+-Shades:
+-Accents:
+-Greys:
+
+--- 05 Shadows:
+
+
+--- 06 Border-radius:
+Default: 9px
+
+--- 07 Whitespace:
+
+-SPACING SYSTEM (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+*/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  /* scroll-behavior: smooth; */
+}
+
+body {
+  font-family: "Josefin Sans", sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  color: #555;
+  overflow-x: hidden;
+}
+
+.header-container {
+  display: flex;
+  flex-direction: column;
+
+  margin-bottom: 9.6rem;
+}
+
+.link:link,
+.link:visited {
+  text-decoration: none;
+  display: flex;
+  padding: 1.6rem 2.4rem;
+  color: inherit;
+  transition: all 0.3s;
+  border-radius: 5px;
+  align-items: center;
+  gap: 1.2rem;
+}
+.link:hover,
+.link:active {
+  color: #fff;
+  background-color: #be4bdb;
+  box-shadow: 0 0 0 0.8rem rgba(191, 76, 220, 0.5);
+}
+
+.link-primary:link,
+.link-primary:visited {
+  color: #fff;
+  background-color: #be4bdb;
+  font-size: 2.2rem;
+  font-weight: 500;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+}
+
+strong {
+  font-weight: 500;
+}
